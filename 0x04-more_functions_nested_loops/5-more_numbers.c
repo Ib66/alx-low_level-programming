@@ -1,30 +1,22 @@
 #include "main.h"
 
 /**
- *  * more_numbers - outputs the number 0-14, ten times
- *   *
- *    * Description: _putchar function is used for this purpose
- *     * Return: nothing because of the "void" nature of the function datatype
- *      */
+ *  * more_numbers - prints numbers between 0 to 14
+ *   * 10 times.
+ *    * Return: no return.
+ *     */
 void more_numbers(void)
 {
-		int count;
-			int counter;
+		int i, ch;
 
-				for (count = 0; count <= 10; count++)
-						{
-									while (counter <= 14)
-												{
-																if (counter > 9)
-																				{
-																									_putchar((count / 10) + '0');
-																													_putchar((count % 10) + '0');
-																																}
-																			else
-																								_putchar(count + '0');
-																						counter++;
-																								}
-											_putchar('\n');
-												}
+			for (i = 0; i < 10; i++)
+					{
+								for (ch = 0; ch < 15; ch++)
+											{
+															if (ch >= 10)
+																				_putchar((ch / 10) + 48);
+																		_putchar((ch % 10) + 48);
+																				}
+										_putchar('\n');
+											}
 }
-

@@ -1,23 +1,18 @@
-nclude "main.h"
+#include "main.h"
 
 /**
- *  * print_most_numbers - outputs the number 0-9, excluding 2 & 4 followed
- *   * by a new line
- *    *
- *     * Description: _putchar function is used for this purpose
- *      * Return: nothing because of the "void" nature of the function datatype
- *       */
+ *  * print_most_numbers - prints numbers between 0 to 9
+ *   * (neither 2 nor 4).
+ *    * Return: no return.
+ */
 void print_most_numbers(void)
 {
-		int count = 0;
+		int ch;
 
-			while (count < 10)
+			for (ch = 48; ch < 58; ch++)
 					{
-								if (count == 2 || count == 4)
-												continue;
-										else
-														_putchar(count + '0');
-												count++;
-													}
+						if (ch != 50 && ch != 52)
+							_putchar(ch);
+					}
 				_putchar('\n');
-}		
+}

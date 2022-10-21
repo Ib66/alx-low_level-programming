@@ -1,27 +1,23 @@
 #include "main.h"
 
 /**
- *  * print_square - print '#' to the standard output
- *   * @size:input function parameter, which determines the number of '#' to be printed
+ *  * print_square - prints hashes squares.
+ *   * @size: size of the square.
  *    *
- *     * Description: _putchar function is used for this purpose
- *      * Return: nothing because of the "void" nature of the function datatype
- *       */
+ *     * Return: no return.
+ *      */
 void print_square(int size)
 {
-		int count;
-			int counter = 0;
+		int i, j;
 
-				if (size <= 0)
-							_putchar('\n');
-					else
-							{
-										while (counter < size)
-													{
-																	for (count = 1; count <= size; count++)
-																						_putchar('#');
-																				counter++;
-																							_putchar('\n');
-																									}
+			for (i = 0; i < size; i++)
+					{
+								for (j = 0; j < size; j++)
+											{
+															_putchar(35);
+																	}
+										if (i != size - 1)
+														_putchar('\n');
 											}
+				_putchar('\n');
 }

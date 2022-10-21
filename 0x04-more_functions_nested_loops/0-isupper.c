@@ -6,7 +6,7 @@
  *    *
  *     * Description: checks for case sensitivity of inputted character
  *      * Return: 1 if the inputted character is uppercase, else 0
- *       */
+ */
 int _isupper(int c)
 
 {

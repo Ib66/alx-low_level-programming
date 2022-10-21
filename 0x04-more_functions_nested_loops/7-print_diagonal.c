@@ -1,29 +1,23 @@
 #include "main.h"
 
 /**
- *  * print_diagonal - print '\' to the standard output, followed by a new line
- *   * @n:input function parameter, which determines the number of '\' to be printed
- *    *
- *     * Description: _putchar function is used for this purpose
- *      * Return: nothing because of the "void" nature of the function datatype
- *       */
+ *  * print_diagonal - prints diagonal line n times.
+ *   * @n: times diagonal line is printed.
+ *    * Return: no return.
+ *     */
 void print_diagonal(int n)
 {
-		int count;
-			int countee;
+		int i, j;
 
-				if (n <= 0)
-							_putchar('\n');
-					else
-							{
-										for (count = 0; count <= n; count++)
-													{
-																	for (countee = 0; countee < count; countee++)
-																					{
-																										_putchar(' ');
-																													}
-																				_putchar(92);
-																							_putchar('\n');
-																									}
-											}
+			for (i = 0; i < n; i++)
+					{
+								for (j = 0; j < i; j++)
+											{
+															_putchar(' ');
+																	}
+										_putchar(92);
+												if (i < (n - 1))
+																_putchar('\n');
+													}
+				_putchar('\n');
 }
