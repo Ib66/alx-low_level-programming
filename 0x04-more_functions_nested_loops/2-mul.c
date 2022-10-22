@@ -5,9 +5,9 @@
  *   * @a: first given integer parameter
  *    * @b: second given integer parameter
  *     *
- *      * Description: the function takes in 2 arguments and multiplies it together
+ *      * Description: the function takes in 2 arguments and multiply them
  *       * Return: 0 for successful code execution
- *        */
+ */
 int mul(int a, int b)
 {
 		int result;
