@@ -1,23 +1,12 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * reset_to_98: collects a pointer and updates it to 98
- * (int *n): this refers to a pointer
- *
- * return: void
+ *  * reset_to_98 - collects the pointer to int and updates the value to 98
+ *   * @n: the pointer to the integer
+ *    *
+ *     * Return: void
  */
-
-int main(void)
+void reset_to_98(int *n)
 {
-	int m;
-	int *n;
-
-	m = 45;
-	n = &m;
-	printf("value of m: %d\n", m);
-
-	*n = 98;
-	printf("value of m: %d\n", m);
-	return (0);
+		*n = 98;
 }
