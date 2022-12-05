@@ -1,14 +1,13 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
-*read_textfile - a function that reads and prints a text file
-*@filename: a pointer to the name of the file
-*@letters: numbers of letters it could read and print
+* read_textfile - a function that reads and prints a text file
+* @filename: a pointer to the name of the file
+* @letters: numbers of letters it could read and print
 *
-*return: if file can not be opened or read  - 0,
-	if filename is NULL - 0,
-	if RDWR fails or does not write the expected amount of bytes - 0.
+* Return: if file can not be opened or read  - 0,
+*	if filename is NULL - 0,
+*	if RDWR fails or does not write the expected amount of bytes - 0.
 */
 
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -27,7 +26,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	r = read(o, buffer, letters);
 	w = write(STDOUT_FILENO, buffer, r);
 
-	if  (o == -1 || r == -1 || w == -1)
+	if (o == -1 || r == -1 || w == -1)
 	{
 		free(buffer);
 		return (0);
